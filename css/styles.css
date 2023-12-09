@@ -187,8 +187,41 @@ img {
   background-image: url(../images/background/bg_img2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 105px;
+  padding-bottom: 105px;
 }
 .used-list{
   display: flex;
-  gap: ;
+justify-content: center;
+
+}
+.used-list{
+  border: 5px solid var(--accent-color);
+}
+   .used-item:nth-child(1){
+    padding:25px 50px ;
+   }
+   .used-item:nth-child(2){
+    padding: 25px 95px 19px 95px ;
+    border-left: 1px solid var(--main-color);
+   }
+.used-item:nth-child(3){
+  padding: 22px 50px 25px 50px ;
+  border-left:1px solid var(--main-color) ;
+}
+.used-item-title{
+  color: var(--main-color);
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: normal;
+
+   }
+.reviews{
+  background-image: url(../images/background/bg_img3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 114px;
+  padding-bottom: 114px;
 }
