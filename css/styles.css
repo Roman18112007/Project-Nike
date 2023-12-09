@@ -1,61 +1,182 @@
 :root {
-        --accent-color:#C7C7C7;
-        --main-color:#ffffff;
-        --background-colour: #012D63;;
-        --bg-dark-blue:#021635;;
-        --add-grey:#959595;
-        --add-dark-white:#DCDCDC;
-        --add-dark-gray:#8D8D8D;
-    }
-        .body {
-            font-family: Roboto;
-        }
-    
-        h1,
-        h2,
-        h3,
-        h4,
-        p {
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-    
-        ul {
-            margin-top: 0;
-            margin-bottom: 0;
-            padding-left: 0;
-        }
-    
-        img {
-            display: block;
-            max-width: 100%;
-            height: auto;
-        }
-    
-        .list {
-            list-style: none;
-            padding: 0;
-        }
-    
-        .link {
-            text-decoration: none;
-        }
-    
-        .visually-hidden {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            margin: -1px;
-            border: 0;
-            padding: 0;
-            white-space: nowrap;
-            clip-path: inset(100%);
-            clip: rect(0 0 0 0);
-            overflow: hidden;
-        }
-     .container {
-            width: 1138px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-       
+  --accent-color: #8e32c6;
+  --main-color: #ffffff;
+  --background-colour: #012d63;
+  --bg-dark-blue: #021635;
+  --add-grey: #959595;
+  --add-dark-white: #dcdcdc;
+  --add-dark-gray: #8d8d8d;
+  --add-colour: #c7c7c7;
+}
+
+.body {
+  font-family: Roboto;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background-color: var(--background-colour);
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+
+.header>.container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 152px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 29px;
+}
+
+.nav-item-link {
+  color: var(--add-colour);
+  font-size: 23px;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.nav-item-link:focus,
+.nav-item-link:hover {
+  color: var(--main-color);
+  font-weight: 400;
+}
+
+.language-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.language-item-btn {
+  color: var(--main-color);
+  background-color: var(--background-colour);
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+  border: none;
+}
+
+.language-item-btn:focus,
+.language-item-btn:hover {
+  color: var(--add-dark-white);
+  cursor: pointer;
+}
+
+.promotion {
+  background-image: url('../images/background/bg_img1.jpg');
+  background-repeat: no-repeat;
+  padding-top: 94px;
+  padding-bottom: 182px;
+  background-size: cover;
+}
+
+.promotion-logo {
+  width: 160px;
+}
+
+.promotion-logo-text {
+  height: 86px;
+  color: var(--main-color);
+  font-family: PT Serif;
+  font-size: 48px;
+  line-height: normal;
+}
+
+.promotion-title {
+  color: var(--main-color);
+  font-family: Playfair Display;
+  font-size: 144px;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 8px;
+}
+
+.promotion-subtitle {
+  color: var(--main-color);
+  font-family: Playfair Display;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: normal;
+  
+}
+
+.promotion-text {
+  color: var(--main-color);
+  font-size: 18px;
+  line-height: normal;
+  padding-top: 12px;
+}
+
+.promotion-btn {
+  color: var(--main-color);
+  background-color: var(--accent-color);
+  font-family: Roboto;
+  font-size: 24px;
+  line-height: normal;
+  border-radius: 10px;
+  height: 67px;
+  border: none;
+  padding: 20px 61px;
+  text-align: center;
+  margin-top: 41px;
+}
+
+.promotion-btn:focus,
+.promotion-btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
