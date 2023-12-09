@@ -126,6 +126,7 @@ img {
 
 .promotion-logo {
   width: 160px;
+  margin-left:5px;
 }
 
 .promotion-logo-text {
@@ -134,6 +135,7 @@ img {
   font-family: PT Serif;
   font-size: 48px;
   line-height: normal;
+  margin-left: 20px;
 }
 
 .promotion-title {
@@ -142,7 +144,8 @@ img {
   font-size: 144px;
   font-weight: 400;
   line-height: normal;
-  padding-bottom: 8px;
+ margin-bottom: 8px;
+  margin-left: -5px;
 }
 
 .promotion-subtitle {
@@ -179,4 +182,13 @@ img {
 .promotion-btn:hover {
   opacity: 0.7;
   cursor: pointer;
+}
+.used{
+  background-image: url(../images/background/bg_img2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.used-list{
+  display: flex;
+  gap: ;
 }
