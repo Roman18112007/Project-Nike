@@ -5,7 +5,7 @@
   --bg-dark-blue: #021635;
   --add-grey: #959595;
   --add-dark-white: #dcdcdc;
-  --add-dark-gray: #D8D8D8;
+  --add-dark-gray: #d8d8d8;
   --add-colour: #c7c7c7;
 }
 
@@ -117,7 +117,7 @@ img {
 }
 
 .promotion {
-  background-image: url('../images/background/bg_img1.jpg');
+  background-image: url("../images/background/bg_img1.jpg");
   background-repeat: no-repeat;
   padding-top: 94px;
   padding-bottom: 182px;
@@ -154,7 +154,6 @@ img {
   font-size: 72px;
   font-weight: 400;
   line-height: normal;
-
 }
 
 .promotion-text {
@@ -195,7 +194,6 @@ img {
 .used-list {
   display: flex;
   justify-content: center;
-
 }
 
 .used-list {
@@ -244,11 +242,12 @@ img {
 }
 
 .reviews {
-  background-image: url(../images/flowers/flowers.svg), url(../images/background/bg_img3.jpg);
+  background-image: url(../images/flowers/flowers.svg),
+    url(../images/background/bg_img3.jpg);
   background-repeat: no-repeat;
   background-size: 250px, cover;
   background-position: left bottom;
-  padding-top: 114px;
+  padding-top: 24px;
   padding-bottom: 114px;
 }
 
@@ -260,44 +259,52 @@ img {
   font-weight: 400;
   line-height: normal;
   margin-bottom: 24px;
-  margin-top: 24px;
 }
 
 .reviews-list {
   display: flex;
   justify-content: center;
   gap: 93px;
-
 }
 
 .reviews-item {
   border-radius: 15px;
   padding: 49px 9px 30px 18px;
-  width: 255px;
+  flex-basis: 255px;
 }
 
 .reviews-item:nth-child(1) {
-  background-image: linear-gradient(137deg, #00E5E6 7.29%, #00A8F7 26.04%, #9A76F9 62.5%, #CC5EC2 100%);
-  box-shadow: 0px 30px 0px -13px #533978, 0px 14px 0px -5px #7B54B2;
-
-
+  background-image: linear-gradient(137deg,
+      #00e5e6 7.29%,
+      #00a8f7 26.04%,
+      #9a76f9 62.5%,
+      #cc5ec2 100%);
+  box-shadow: 0px 14px 0px -5px #7b54b2, 0px 30px 0px -13px #533978;
 }
 
 .reviews-item:nth-child(2) {
-  background-image: linear-gradient(137deg, #FF68B4 0%, #FF45E1 26.04%, #CE3AFF 62.84%, #8961FF 100%);
-  box-shadow: 0px 30px 0px -13px #61337C, 0px 14px 0px -5px #9159B1;
+  background-image: linear-gradient(137deg,
+      #ff68b4 0%,
+      #ff45e1 26.04%,
+      #ce3aff 62.84%,
+      #8961ff 100%);
+  box-shadow: 0px 14px 0px -5px #9159b1, 0px 30px 0px -13px #61337c;
 }
 
 .reviews-item:nth-child(3) {
   border-radius: 15px;
-  background-image: linear-gradient(143deg, #FFE128 0%, #FF9B5C 30.21%, #FF8381 63.29%, #FF5489 100%);
-  box-shadow: 0px 30px 0px -13px #732F26, 0px 14px 0px -5px #B95A4C;
+  background-image: linear-gradient(143deg,
+      #ffe128 0%,
+      #ff9b5c 30.21%,
+      #ff8381 63.29%,
+      #ff5489 100%);
+  box-shadow: 0px 14px 0px -5px #b95a4c, 0px 30px 0px -13px #732f26;
 }
+
 .reviews-item-text {
   color: var(--main-color);
   font-size: 24px;
   line-height: normal;
-
 }
 
 .reviews-item-data {
@@ -308,13 +315,14 @@ img {
   padding-bottom: 35px;
 }
 
-.reviews-container{
+.reviews-container {
   display: flex;
 }
 
 .reviews-item-title {
   color: var(--main-color);
   font-size: 14px;
+  font-weight: 400;
   line-height: normal;
   padding-left: 5px;
 }
@@ -325,4 +333,86 @@ img {
   line-height: normal;
   padding-left: 5px;
   padding-top: 1px;
+}
+
+.order {
+  background-image: url(../images/background/bg_img4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 21px;
+  padding-bottom: 37px;
+}
+
+.order-title {
+  color: var(--main-color);
+  font-family: Playfair Display;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 33px;
+}
+
+.order-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.order-form {
+  display: flex;
+  justify-content: center;
+
+}
+
+.order-input {
+  width: 205px;
+  padding: 12px 25px 13px;
+}
+
+.order-input::placeholder {
+  color: var(--add-grey);
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.order-input {
+  font-size: 28px;
+  width: 580px;
+  height: 50px;
+}
+
+.order-input {
+  border-radius: 50px;
+}
+
+.order-input:hover,
+.order-input:focus {
+  border-color: var(--accent-color);
+  width: 690px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.order-btn {
+  color: var(--main-color);
+  background-color: var(--accent-color);
+  border-radius: 16px;
+  width: 248px;
+  height: 68px;
+  font-family: Roboto;
+  font-size: 24px;
+  margin: 0 auto;
+  border: none;
+  margin-top: 19px;
+  padding: 20px 48px;
+}
+
+.order-btn:focus,
+.order-btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
