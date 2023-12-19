@@ -387,20 +387,19 @@ width: 580px;
 
 .order-input {
   border-radius: 50px;
-  margin:19px
+  margin-bottom:19px;
 }
 
 .order-input:hover,
 .order-input:focus {
   border-color: var(--accent-color);
-transform: scale(1.1);
+transform: scale(1.2);
   cursor: pointer;
 }
 
 .confirm-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;  
+position: relative;
+
 }
 
 .confirm-btn {
@@ -409,9 +408,11 @@ transform: scale(1.1);
   font-family: Roboto;
   font-size: 28px;
   line-height: normal;
-  background-color: var(--main-color);
+background: none;
   position: sticky;
-
+position: absolute;
+  bottom: 25px;
+  right: 65px;
 }
 
 .order-btn {
@@ -424,7 +425,6 @@ transform: scale(1.1);
   font-size: 24px;
   margin: 0 auto;
   border: none;
-  margin-top: 19px;
   padding: 20px 48px;
   display: block;
 }
@@ -454,8 +454,6 @@ transform: scale(1.1);
 .footer-item:nth-child(2) {
   display: flex;
   gap: 373px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .footer-item:nth-child(3) {
@@ -483,20 +481,24 @@ transform: scale(1.1);
   color: var(--main-color);
   font-size: 18px;
   line-height: normal;
-  padding-top: 24px;
-  padding-bottom: 7px;
+margin-bottom: 7px;
   }
-.footer-container{
+.footer-text-container{
   display: flex;
   flex-direction: column;
-   }
+ }
 .logo-footer-container{
+width: 108px;
+}
+.footer-container{
   display: flex;
-  align-items: end;
+  justify-content: space-between;
+    align-items: center;
 }
 .footer-logo-text {
   color: var(--main-color);
   font-family: PT Serif;
   font-size: 24px;
   line-height: normal;
-  }
+  margin-left: 20px;
+}
