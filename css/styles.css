@@ -354,18 +354,19 @@ img {
 }
 
 .order-form-container {
-  display: flex;
-  flex-direction: column;
-  gap: 19px;
+width: 580px;
   margin: 0 auto;
 }
 
 .order-form {
-  display: flex;
- }
+  
+}
+
 .order-input {
   padding: 12px 25px 13px;
+  width: 100%;
 }
+
 .order-input::placeholder {
   color: var(--add-grey);
   font-family: Roboto;
@@ -373,26 +374,45 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
- 
+
 }
+
 .order-input {
   font-size: 28px;
   width: 580px;
-  height: 50px; 
-   border: none;
+  height: 50px;
+  border: none;
   outline: none;
 }
 
 .order-input {
   border-radius: 50px;
+  margin-bottom: 19px;
 }
 
 .order-input:hover,
 .order-input:focus {
   border-color: var(--accent-color);
-  width: 690px;
-  height: 60px;
+transform: scale(1.1);
   cursor: pointer;
+}
+
+.confirm-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.confirm-btn {
+  border: none;
+  display: block;
+  color: #8D8D8D;
+  font-family: Roboto;
+  font-size: 28px;
+  line-height: normal;
+  background-color: var(--main-color);
+  position: sticky;
+
 }
 
 .order-btn {
@@ -420,31 +440,63 @@ img {
   padding-top: 45px;
   padding-bottom: 50px;
 }
-.footer-content-adress{
+
+.footer-content-adress {
   border-bottom: 1px solid;
   color: #9B9B9B;
 }
+
+.footer-item:nth-child(1) {
+  display: flex;
+  gap: 591px;
+}
+
+.footer-item:nth-child(2) {
+  display: flex;
+  gap: 373px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-item:nth-child(3) {
+  display: flex;
+  gap: 493px;
+  margin-bottom: 20px;
+}
+
 .footer-item-text {
   color: var(--main-color);
   font-size: 24px;
   font-style: normal;
   line-height: normal;
 }
+
 .footer-item-link {
   color: var(--main-color);
   font-size: 24px;
   font-style: normal;
   line-height: normal;
+  padding-bottom: 10px;
 }
-.footer-text{
+
+.footer-text {
   color: var(--main-color);
-    font-size: 18px;
-    line-height: normal;
+  font-size: 18px;
+  line-height: normal;
+  padding-top: 24px;
+  padding-bottom: 7px;
+  }
+.footer-container{
+  display: flex;
+  flex-direction: column;
+   }
+.logo-footer-container{
+  display: flex;
+  align-items: end;
 }
-.footer-logo-text{
+.footer-logo-text {
   color: var(--main-color);
-    font-family: PT Serif;
-    font-size: 24px;
-    line-height: normal;
-    margin-left: 10px;
-}
+  font-family: PT Serif;
+  font-size: 24px;
+  line-height: normal;
+  }
