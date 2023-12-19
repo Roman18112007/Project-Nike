@@ -387,7 +387,7 @@ width: 580px;
 
 .order-input {
   border-radius: 50px;
-  margin-bottom: 19px;
+  margin:19px
 }
 
 .order-input:hover,
@@ -405,7 +405,6 @@ transform: scale(1.1);
 
 .confirm-btn {
   border: none;
-  display: block;
   color: #8D8D8D;
   font-family: Roboto;
   font-size: 28px;
@@ -427,6 +426,7 @@ transform: scale(1.1);
   border: none;
   margin-top: 19px;
   padding: 20px 48px;
+  display: block;
 }
 
 .order-btn:focus,
