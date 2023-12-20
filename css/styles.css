@@ -476,17 +476,18 @@ position: absolute;
   line-height: normal;
   padding-bottom: 10px;
 }
-
+.footer-item-link:focus,
+.footer-item-link:hover{
+opacity: 0.8;
+}
 .footer-text {
   color: var(--main-color);
   font-size: 18px;
   line-height: normal;
-margin-bottom: 7px;
   }
-.footer-text-container{
-  display: flex;
-  flex-direction: column;
- }
+  .footer-text:not(:last-child){
+    margin-bottom: 7px;
+  }
 .logo-footer-container{
 width: 108px;
 }
