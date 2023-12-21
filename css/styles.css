@@ -135,7 +135,8 @@ img {
   font-family: PT Serif;
   font-size: 48px;
   line-height: normal;
-  margin-left: 20px;
+  margin-left: 30px;
+  margin-top: -25px;
 }
 
 .promotion-title {
@@ -160,7 +161,7 @@ img {
   color: var(--main-color);
   font-size: 18px;
   line-height: normal;
-  padding-top: 12px;
+  margin-top: 12px;
 }
 
 .promotion-btn {
@@ -187,6 +188,7 @@ img {
   background-image: url(../images/background/bg_img2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding-top: 105px;
   padding-bottom: 105px;
 }
@@ -200,7 +202,7 @@ img {
   border: 5px solid var(--accent-color);
 }
 
-.used-item:nth-child(1) {
+.used-item {
   padding-right: 50px;
   padding-left: 50px;
   margin-top: 25px;
@@ -213,14 +215,7 @@ img {
   margin-top: 25px;
   margin-bottom: 19px;
   border-left: 1px solid var(--main-color);
-}
-
-.used-item:nth-child(3) {
-  padding-right: 50px;
-  padding-left: 50px;
-  margin-top: 22px;
-  margin-bottom: 25px;
-  border-left: 1px solid var(--main-color);
+  border-right: 1px solid var(--main-color);
 }
 
 .used-item-title:nth-child(1),
@@ -249,6 +244,7 @@ img {
   background-position: left bottom;
   padding-top: 24px;
   padding-bottom: 114px;
+
 }
 
 .reviews-title {
@@ -292,7 +288,6 @@ img {
 }
 
 .reviews-item:nth-child(3) {
-  border-radius: 15px;
   background-image: linear-gradient(143deg,
       #ffe128 0%,
       #ff9b5c 30.21%,
@@ -311,12 +306,13 @@ img {
   color: var(--add-dark-gray);
   font-size: 14px;
   line-height: normal;
-  padding-top: 8px;
-  padding-bottom: 35px;
+  margin-top: 8px;
+  margin-bottom: 35px;
 }
 
 .reviews-container {
   display: flex;
+  gap: 5px;
 }
 
 .reviews-item-title {
@@ -324,21 +320,20 @@ img {
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
-  padding-left: 5px;
 }
 
 .reviews-item-year {
   color: var(--add-dark-gray);
   font-size: 12px;
   line-height: normal;
-  padding-left: 5px;
-  padding-top: 1px;
+  margin-top: 1px;
 }
 
 .order {
   background-image: url(../images/background/bg_img4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding-top: 21px;
   padding-bottom: 37px;
 }
@@ -354,12 +349,8 @@ img {
 }
 
 .order-form-container {
-width: 580px;
+  width: 580px;
   margin: 0 auto;
-}
-
-.order-form {
-  
 }
 
 .order-input {
@@ -387,18 +378,18 @@ width: 580px;
 
 .order-input {
   border-radius: 50px;
-  margin-bottom:19px;
+  margin-bottom: 19px;
 }
 
 .order-input:hover,
 .order-input:focus {
   border-color: var(--accent-color);
-transform: scale(1.2);
+  transform: scale(1.2);
   cursor: pointer;
 }
 
 .confirm-container {
-position: relative;
+  position: relative;
 
 }
 
@@ -408,11 +399,17 @@ position: relative;
   font-family: Roboto;
   font-size: 28px;
   line-height: normal;
-background: none;
+  background: none;
   position: sticky;
-position: absolute;
+  position: absolute;
   bottom: 25px;
   right: 65px;
+}
+
+.confirm-btn:focus,
+.confirm-btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .order-btn {
@@ -444,22 +441,18 @@ position: absolute;
 .footer-content-adress {
   border-bottom: 1px solid;
   color: #9B9B9B;
+  padding-bottom: 20px;
 }
 
-.footer-item:nth-child(1) {
+.footer-item {
   display: flex;
-  gap: 591px;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
-.footer-item:nth-child(2) {
-  display: flex;
-  gap: 373px;
-}
 
 .footer-item:nth-child(3) {
-  display: flex;
-  gap: 493px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .footer-item-text {
@@ -476,26 +469,32 @@ position: absolute;
   line-height: normal;
   padding-bottom: 10px;
 }
+
 .footer-item-link:focus,
-.footer-item-link:hover{
-opacity: 0.8;
+.footer-item-link:hover {
+  opacity: 0.8;
 }
+
 .footer-text {
   color: var(--main-color);
   font-size: 18px;
   line-height: normal;
-  }
-  .footer-text:not(:last-child){
-    margin-bottom: 7px;
-  }
-.logo-footer-container{
-width: 108px;
 }
-.footer-container{
+
+.footer-text:not(:last-child) {
+  margin-bottom: 7px;
+}
+
+.logo-footer-container {
+  width: 108px;
+}
+
+.footer-container {
   display: flex;
   justify-content: space-between;
-    align-items: center;
+  align-items: center;
 }
+
 .footer-logo-text {
   color: var(--main-color);
   font-family: PT Serif;
